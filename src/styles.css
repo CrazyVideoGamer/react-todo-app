@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --todo-color: black;
+  --progress-color: #313131;
+  --done-color: #666666;
+  font-size: 10px;
+}
+
+body {
+  padding: 5px;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 2rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+p,
+span {
+  font-size: 2rem;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.column-title {
+  margin: 0.5rem;
+}
+
+.column-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  background-color: #ebebeb;
+  border-radius: 0.8rem;
+  width: 80%;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 2rem;
+  display: flex;
+  /* Idk Why this has to be justify-content and why 
+     it has to be align-items, but it works, so whatever */
+  justify-content: space-between;
+  align-items: center;
+}
+
+#buttons-wrapper button {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+  border-color: black;
+  display: inline-block;
+}
+
+.todo {
+  color: var(--todo-color);
+}
+.progress {
+  color: var(--progress-color);
+}
+.done {
+  color: var(--done-color);
+}
+
+footer {
+  margin: 0.7rem;
+}
